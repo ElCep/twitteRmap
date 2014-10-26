@@ -21,4 +21,4 @@ avec le script [getTwittes.R](getTwittes.R), et je vous propose dans le script
 [mapTwitteR.R](mapTwitteR.R) de générer une carte à partir de ces données.
 
 Note : il vous vaudra un fond de carte au format shapeFile pour ça !
-        
+Note n°2 : vous pouvez retrouver un tuto que j'ai réalisé sur [geotribu](http://geotribu.net/node/696)        
