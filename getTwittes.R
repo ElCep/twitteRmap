@@ -9,17 +9,6 @@ library(lubridate)
 endDay = today()
 startDay = endDay - 1*weeks()
 
-# reqURL = "https://api.twitter.com/oauth/request_token"
-# accessURL = "http://api.twitter.com/oauth/access_token"
-# authURL = "http://api.twitter.com/oauth/authorize"
-# consumerKey = "nP9JdRBlToVZ4xXrNeUbw"
-# consumerSecret = "KsK7qsu13cEUXhlpUSSo4UGHsoSTuBvwVPqzKAb6DqU"
-# 
-# library(twitteR)
-# twitCred = OAuthFactory$new(consumerKey=consumerKey,consumerSecret=consumerSecret,requestURL=reqURL,accessURL=accessURL,authURL=authURL)
-# twitCred$handshake()
-# save(twitCred, file="../cred.RData")
-
 library(twitteR)
 load("../cred.RData")
 registerTwitterOAuth(twitCred)
@@ -50,4 +39,3 @@ for (i in 1:length(tweets[,1])) {
 }
 
 write.csv(dataToMap,paste("csv/data",Sys.time(),".csv",sep=""))
-
